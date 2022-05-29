@@ -1,5 +1,8 @@
 body {
-    background-image: url(../images/bg.jpg);
-
+    display: flex;
 }
 
+.li {
+    display: flex;
+    display: inline;    
+}
