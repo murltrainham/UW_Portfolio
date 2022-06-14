@@ -75,24 +75,20 @@ nav img {
   align-items: center;
   width: 80%;
   background: rgb(0, 0, 0);
-  background: linear-gradient(
-	0deg,
-    rgba(116, 114, 112) 10%,
-    rgb(0, 0, 0) 100%
-  );
+  background: linear-gradient(0deg, rgba(116, 114, 112) 10%, rgb(0, 0, 0) 100%);
   padding: 5%;
   margin-left: 5%;
-}
-
-.about {
-  text-align: center;
-  font-size: 30px;
-  color: goldenrod;
 }
 
 .aboutmepara {
   font-weight: bold;
   font-size: 30px;
+  color: goldenrod;
+}
+
+.about {
+  text-align: center;
+  font-size: 25px;
   color: goldenrod;
 }
 
@@ -113,27 +109,50 @@ nav img {
   margin-left: 5%;
 }
 
-.worksquare .work {
+.workpara {
+	font-weight: bold;
+	font-size: 32px;
+	color: goldenrod;
+	text-align: center;
+  }
+
+.work {
+  flex: 50%;
+}
+
+/*.worksquare .work {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
-}
+}*/
 
-.worksquare .work .column {
+/*.worksquare .work .column {
   flex: 50%;
   padding: 0 4px;
-}
+}*/
 
-.worksquare .work .column img {
+/*.worksquare .work .column img {
   margin-top: 8px;
   vertical-align: middle;
+  padding: 0 4px;
+}*/
+
+/*.worksquare .work .column .boarskull {
+  position: relative;
+}*/
+
+.worksquare .work .column .boarskull {
+	position: relative;
 }
 
-.worksquare .work .column p {
-	font-weight: bold;
-	font-size: 30px;
-	color: goldenrod;
-	text-align: center;
+.worksquare .work .column .boarskull figcaption {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  letter-spacing: 5px;  
+  font-size: 30px;
+  font-weight: bold;
+  color: goldenrod;
 }
 
 @media screen and (max-width: 500px) {
