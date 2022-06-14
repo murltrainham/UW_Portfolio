@@ -1,61 +1,98 @@
-body {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.3;
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	box-sizing: border-box;
+	background: url("../images/bg.jpg") no-repeat center center fixed;
+	background-size: cover;
+	height: 100%;	
 }
 
-.container {
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,.5) 0%, rgba(0,0,0,1) 100%),url(../images/bg.jpg);
-    background-position: center;
-    background-size: cover;
+*, *::before, *::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+.aboutsquare {
+		display: flex;
+		border: solid black;
+		border-radius: 15px;
+		align-items: center;
+		width: 100%;
+		background: rgb(0, 0, 0);
+		background: linear-gradient(0deg, rgba(0,0,0,0.3879633) 0%, rgba(23,16,1,0.8706131) 0%);
+		padding: 10%;
+		margin: 5%;
+		
+}
+
+.about {
+	text-align: center;
+	font-size: 30px;
+}
+
+.aboutmepara {
+	font-weight: bold;
+	font-size: 30px;
 }
 
 .navbar {
-    padding: 2em;
-    height: 20%;
-    width: 95%;
-    display: flex;
-    
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: solid black;
+	border-radius: 10px;
+	outline: 20px;
+	outline-color: aqua;
+	margin: 5%;
 }
 
-.logo {
-    width: 5em;
-    height: 5em;
-    filter: saturate(0);
-    border-radius: 16px;
-    border: 5px solid black;
+nav {
+	width: 100%;
+	background: rgb(0, 0, 0);
+	background: linear-gradient(0deg, rgba(0,0,0,0.3879633) 0%, rgba(23,16,1,0.8706131) 0%);
+	padding-left: 30px;
+	padding-right: 10px;
 }
 
-ul {
-    padding: 2em;
-    height: 10%;
-    width: 92%;
-    display: flex;
-    cursor: pointer;  
-    list-style-type: none;
+nav img {
+	display: inline-block;
 }
 
-li {
-    flex:auto;
-
+.navlinks {
+	list-style: none;
+	display: flex;
 }
 
-.row {
-    display: flex;
+.navitem a {
+	display: inline-block;
+	padding: 10px 15px;
+	text-decoration: underline;
+	color: black;
+	font-weight: bold;
+	font-size: 30px;
 }
 
-.col {
-    flex: 1 0 0%;
+.logo img {
+	height: 100px;
+	width: 100px;
+	border: solid black;
+	border-radius: 15px;
+	vertical-align: middle;
 }
 
-@media screen and (max-width:768px) {
-    header {
-        flex-direction: column;
-    }
 
-    main{
-        max-width: 1200px;
-    }
+
+@media screen and (max-width: 450px){
+	.navbar {
+		flex-direction: column-reverse;		 
+	}
+	.navlinks {
+		flex-direction: column-reverse;
+		text-align: center;		
+	}
+	.logo img {
+		align-self: center;
+	}
 }
