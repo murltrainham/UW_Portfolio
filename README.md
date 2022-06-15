@@ -10,7 +10,7 @@ Lessons learned :
 <p>(c) Get better at nesting</p>
 <p>(d) My intial layout was not well defined. Layout early and stick to the plan.</p>
 
-![Image](./assets/images/portfoliosample.png)
+![Image](./assets/images/portfoliosample.PNG)
 
 
 ## Built With
