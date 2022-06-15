@@ -8,12 +8,6 @@ html {
   height: 100%;
 }
 
-/* *, *::before, *::after { 
-	box-sizing: inherit;
-	margin: 10px;
-	padding: 10px;
-}*/
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -22,9 +16,7 @@ html {
   border-width: 1em;
   border-radius: 100px;
   outline: 20px;
-  width: 90%;
-  padding: 2%;
-  margin-left: 3%;
+  width: auto;
 }
 
 nav {
@@ -73,11 +65,9 @@ nav img {
   border-width: 1em;
   border-radius: 50px;
   align-items: center;
-  width: 80%;
+  width: auto;
   background: rgb(0, 0, 0);
   background: linear-gradient(0deg, rgba(116, 114, 112) 10%, rgb(0, 0, 0) 100%);
-  padding: 5%;
-  margin-left: 5%;
 }
 
 .aboutmepara {
@@ -87,6 +77,7 @@ nav img {
 }
 
 .about {
+  padding: 5%;
   text-align: center;
   font-size: 25px;
   color: goldenrod;
@@ -94,30 +85,28 @@ nav img {
 
 .worksquare {
   display: flex;
+  padding: 10%;
   border: solid goldenrod;
   border-width: 1em;
   border-radius: 50px;
   align-items: center;
-  width: 80%;
+  width: auto;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 0.856) 0%,
     rgb(116, 114, 112) 0%
   );
-  padding: 5%;
-  margin-left: 5%;
 }
 
-.workpara {
-	font-weight: bold;
-	font-size: 32px;
-	color: goldenrod;
-	text-align: center;
-  }
+.worksquare .work {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
 
-.work {
-  flex: 50%;
+.column {
+  padding: 5px;
 }
 
 /*.worksquare .work {
@@ -126,30 +115,111 @@ nav img {
   padding: 0 4px;
 }*/
 
-/*.worksquare .work .column {
-  flex: 50%;
-  padding: 0 4px;
-}*/
+.worksquare .work .column {
+  padding: 10px 10px 10px;
+}
 
 /*.worksquare .work .column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  padding: 0 4px;
-}*/
-
+	margin-top: 8px;
+	vertical-align: middle;
+	padding: 0 4px;
+}
+*/
 /*.worksquare .work .column .boarskull {
   position: relative;
 }*/
 
 .worksquare .work .column .boarskull {
-	position: relative;
+  display: flex;
+  position: relative;
+  width: fit-content;
+  padding: 50px;
 }
 
 .worksquare .work .column .boarskull figcaption {
   position: absolute;
   bottom: 60px;
-  left: 60px;
-  letter-spacing: 5px;  
+  letter-spacing: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  color: goldenrod;
+}
+
+.worksquare .work .column .bull {
+  display: flex;
+  position: relative;
+  width: fit-content;
+  padding: 50px;
+}
+
+.worksquare .work .column .bull figcaption {
+  position: absolute;
+  bottom: 60px;
+  letter-spacing: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  color: goldenrod;
+}
+
+.worksquare .work .column .donkey {
+  display: flex;
+  position: relative;
+  width: fit-content;
+  padding: 50px;
+}
+
+.worksquare .work .column .donkey figcaption {
+  position: absolute;
+  bottom: 60px;
+  letter-spacing: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  color: goldenrod;
+}
+
+.worksquare .work .column .griffin {
+  display: flex;
+  position: relative;
+  width: fit-content;
+  padding: 50px;
+}
+
+.worksquare .work .column .griffin figcaption {
+  position: absolute;
+  bottom: 60px;
+  letter-spacing: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  color: goldenrod;
+}
+
+.worksquare .work .column .horse {
+  display: flex;
+  position: relative;
+  width: fit-content;
+  padding: 50px;
+}
+
+.worksquare .work .column .horse figcaption {
+  position: absolute;
+  bottom: 60px;
+  letter-spacing: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  color: goldenrod;
+}
+
+.worksquare .work .column .sheep {
+  display: flex;
+  position: relative;
+  width: fit-content;
+  padding: 50px;
+}
+
+.worksquare .work .column .sheep figcaption {
+  position: absolute;
+  bottom: 60px;
+  letter-spacing: 5px;
   font-size: 30px;
   font-weight: bold;
   color: goldenrod;
@@ -163,7 +233,13 @@ nav img {
     flex-direction: column-reverse;
     text-align: center;
   }
-  .logo img {
-    align-self: center;
+  .worksquare {
+    flex-direction: column-reverse;
+  }
+  .work {
+    flex-direction: column-reverse;
+  }
+  .worksquare .work .column {
+    flex-direction: column-reverse;
   }
 }
