@@ -24,4 +24,4 @@ Lessons learned :
 
 ## Authors
 Murl Trainham
-- [Link to Github](https://github.com/murltrainham))
+- [Link to Github](https://github.com/murltrainham)
